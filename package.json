@@ -1,0 +1,28 @@
+{
+  "name": "simple-database-implementation",
+  "version": "1.0.0",
+  "description": "Simple Database and basic CRUD app setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decentralize-It/simple-database-implementation.git"
+  },
+  "author": "DeBray Carpenter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Decentralize-It/simple-database-implementation/issues"
+  },
+  "homepage": "https://github.com/Decentralize-It/simple-database-implementation#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "pg-promise": "^7.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
