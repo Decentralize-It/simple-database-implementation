@@ -1,6 +1,9 @@
+// imports the express module
 const express = require('express');
+// instantiates the express module
 const app = express();
 const PORT = process.env.PORT || 3000;
+// imports the body-parser module
 const bodyParser = require('body-parser')
 const urlParser = bodyParser.urlencoded({extended: false})
 app.set("view engine", "ejs");
