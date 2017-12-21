@@ -20,11 +20,11 @@ Create the database by running script:<br>
 
 ### Import Schema
 Set up your database schema by running script:<br>
-```npm run db:schema``` which runs the command: ```psql < models/schema/schema.sql```
+```npm run db:schema``` which runs the command: ```psql < src/models/schema/schema.sql```
 
 ### Import Seed Data
 Import data into your database by runnig script:<br>
-```npm run db:seed``` which runs the command: ```psql < models/schema/todos.sql```
+```npm run db:seed``` which runs the command: ```psql < src/models/schema/todos.sql```
 
 ### Start Application
 Finally, start your server by running script:<br>
