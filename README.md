@@ -2,23 +2,30 @@
 Simple database implementation for basic CRUD application
 
 ## Getting Started
-In order to download repository to your machine, from your terminal, run command:
+### Download Repository
+In order to download repository to your machine, from your terminal, run command:<br>
 ```git clone https://github.com/Decentralize-It/simple-database-implementation.git```
 
-Change into the newly created directory by running command:
+### Navigate to Newly Downloaded Repository
+Change into the newly created directory by running command:<br>
 ```cd simple-database-implementation```
 
-Install the necessary dependencies by running the command:
+### Install Dependencies
+Install the necessary dependencies by running the command:<br>
 ```npm i``` or ```npm install```
 
-Create the database by running script:
+### Create Database
+Create the database by running script:<br>
 ```npm run db:create``` which runs the command: ```createdb todo```
 
-Set up your database schema by running script:
+### Import Schema
+Set up your database schema by running script:<br>
 ```npm run db:schema``` which runs the command: ```psql < models/schema/schema.sql```
 
-Import data into your database by runnig script:
+### Import Seed Data
+Import data into your database by runnig script:<br>
 ```npm run db:seed``` which runs the command: ```psql < models/schema/todos.sql```
 
-Finally, start your server by running script:
+### Start Application
+Finally, start your server by running script:<br>
 ```npm start``` which runs the command: ```node index.js```
