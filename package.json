@@ -4,6 +4,9 @@
   "description": "Simple Database and basic CRUD app setup",
   "main": "index.js",
   "scripts": {
+    "db:create": "createdb todo",
+    "db:schema": "psql < src/models/schema/schema.sql",
+    "db:seed": "psql < src/models/schema/todos.sql",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
