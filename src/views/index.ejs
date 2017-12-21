@@ -1,16 +1,12 @@
 <%- include commons/header.ejs %>
   <main>
     <ol>
-        <% for(var i=0; i < tasks; i++) {%>
+        <% tasks.forEach(function(item, index) {%>
           <li>
-            <h3>
-              <% name %>
-            </h3>
-            <p>
-              <% description %>
-            </p>
-          </li>
-        <% } %>
+            <h3><%= item.name %></h3>
+            <p><%= item.description %></p>
+          </li><br>
+        <% }); %>
     </ol>
   </main>
 <%- include commons/footer.ejs %>
