@@ -7,7 +7,20 @@
   <body>
     <%- include commons/header.ejs %>
 
-    <h1>This is the INDEX page</h1>
+    <ol>
+        <% for(var i=0; i < tasks; i++) {%>
+          <li>
+            <h3>
+              <% name %>
+            </h3>
+            <p>
+              <% description %>
+            </p>
+          </li>
+        <% } %>
+    </ol>
+      
+    
     <%- include commons/footer.ejs %>
 
   </body>
