@@ -7,7 +7,11 @@ const PORT = process.env.PORT || 3000;
 const bodyParser = require('body-parser')
 // parses url string
 const urlParser = bodyParser.urlencoded({extended: false})
+// Imports database functions from src/models/todos.js
+const { getAllTodos, addTodo, getTodoById, getCompletedTodos, getUncompletedTodos } = require('./src/models/todos')
+
 app.set("view engine", "ejs");
+app.use(urlParser);
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -17,7 +21,9 @@ app.get('/addtodo', (req, res) => {
   res.render('addtodo');
 });
 
-app.post('/addtodo', urlParser, (req, res) => {
+app.post('/addtodo', (req, res) => {
+  let {name, description} = req.body
+
   res.render('addtodo');
 });
 

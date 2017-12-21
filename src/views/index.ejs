@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>INDEX</title>
-  </head>
-  <body>
-    <%- include commons/header.ejs %>
-
+<%- include commons/header.ejs %>
+  <main>
     <ol>
         <% for(var i=0; i < tasks; i++) {%>
           <li>
@@ -19,9 +12,5 @@
           </li>
         <% } %>
     </ol>
-      
-    
-    <%- include commons/footer.ejs %>
-
-  </body>
-</html>
+  </main>
+<%- include commons/footer.ejs %>
